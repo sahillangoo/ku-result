@@ -1,2 +1,2 @@
-scrapy==2.5.0
+scrapy==2.7.1
 smtplib==2.0.1
