@@ -1,2 +1,1 @@
 scrapy==2.7.1
-smtplib==2.0.1
