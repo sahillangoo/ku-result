@@ -1,8 +1,6 @@
 import logging
 import logging.handlers
 import os
-
-
 import scrapy
 import time
 from scrapy.crawler import CrawlerProcess
@@ -23,14 +21,14 @@ logger.addHandler(logger_file_handler)
 
 
 try:
-    EMAIL_SECRET = os.environ["SOME_SECRET"]
+    EMAIL_SECRET = os.environ["EMAIL_SECRET"]
 except KeyError:
     EMAIL_SECRET = "Token not available!"
     #logger.info("Token not available!")
     #raise
 
     if __name__ == "__main__":
-    logger.info(f"Token value: {SOME_SECRET}")
+    logger.info(f"Token value: {EMAIL_SECRET}")
 
 class MySpider(scrapy.Spider):
     name = "Kashmir University Result"
