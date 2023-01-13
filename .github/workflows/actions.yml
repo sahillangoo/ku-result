@@ -2,8 +2,8 @@ name: run main.py
 
 on:
   schedule:
-    #everyday at 11:00am and 3:00pm
-    - cron: '0 11,15 * * *'
+    #everyday at 11:00am 3:00pm 8:00pm
+    - cron: '0 11,15,20 * * *'
 
 jobs:
   build:
