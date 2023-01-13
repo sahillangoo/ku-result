@@ -19,7 +19,6 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
 
-
 try:
     EMAIL_SECRET = os.environ["EMAIL_SECRET"]
 except KeyError:
@@ -58,7 +57,7 @@ class MySpider(scrapy.Spider):
             import smtplib
             from_email = "hello@sahillangoo.com"
             to_email = "sahilahmed3066@gmail.com"
-            password = "{password}"
+            password = "{EMAIL_SECRET}"
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
             server.login(from_email, password)
