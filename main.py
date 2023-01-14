@@ -26,8 +26,8 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 
-    if __name__ == "__main__":
-    logger.info(f"Token value: {EMAIL_SECRET}")
+if __name__ == "__main__":
+        logger.info(f"Token value: {EMAIL_SECRET}")
 
 class MySpider(scrapy.Spider):
     name = "Kashmir University Result"
