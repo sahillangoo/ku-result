@@ -27,7 +27,7 @@ except KeyError:
     #raise
 
 if __name__ == "__main__":
-        logger.info(f"Token value: {EMAIL_SECRET}")
+    logger.info(f"Token value: {EMAIL_SECRET}")
 
 class MySpider(scrapy.Spider):
     name = "Kashmir University Result"
